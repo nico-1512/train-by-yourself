@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="container">
+    <div class="alert alert-danger mt-3 d-none" role="alert"></div>
+    <form id="form-exercise">
+        <div class="form-group mb-3">
+            <label>Name</label>
+            <input type="text" class="form-control" id="exercise-name"></input>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Generic body target</label>
+            <select id="generic-target-select-menu" class="form-select" aria-label="Default select example">
+                <option class="text-muted" selected>None</option>
+                <option value="shoulder">Shoulders</option>
+                <option value="arm">Arms</option>
+                <option value="leg">Legs</option>
+                <option value="core">Core</option>
+                <option value="chest">Chest</option>
+                <option value="back">Back</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label id="specific-target-label" class="form-label d-none">Specific body target</label>
+            <select id="specific-target-select-menu" class="form-select d-none" aria-label="Default select example">
+                <option class="text-muted" selected>None</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Number of sets</label>
+            <select id="sets-select-menu" class="form-select mb-3" aria-label="Default select example">
+                <option class="text-muted" selected>None</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label">Minimum amount of reps</label>
+            <select id="min-reps-select-menu" class="form-select mb-3" aria-label="Default select example">
+                <option class="text-muted" selected>None</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label">Maximum amount of reps</label>
+            <select id="max-reps-select-menu" class="form-select mb-3" aria-label="Default select example">
+                <option class="text-muted" selected>None</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option value="backdown">Backdown</option>
+
+            </select>
+        </div>
+        <div class="form-group mb-3">
+            <label>Description</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!--Scripts-->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="src/newExercise.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center p-5">
+        <div class="col-2"></div>
+        <div class="col-8 d-flex justify-content-center">
+            <div class="column">
+                <h3 class="label label-default">Registration</h3>
+                <form id="register-form">
+                    <input type="text" name="name" id="name" class="mt-5 mb-2 form-control" placeholder="Mario">
+                    <input type="text" name="surname" id="surname" class="mb-2 form-control" placeholder="Rossi">
+                    <input type="email" name="email" id="email" class="mb-2 form-control" placeholder="example@example.com">
+                    <input type="password" name="password" id="password" class="mb-2 form-control" placeholder="password">
+                    <input type="password" name="confirmPassword" id="confirm-password" class="mb-2 form-control" placeholder="confirm password">
+                    <button type="submit" id="send-registration" class="btn btn-primary mb-2">Register</button>
+                </form>
+                <div id="alert-div" class="alert alert-danger d-none" role="alert">
+                    Passwords are not the same or the mail is already in use
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="src/register.js"></script>
+</body>
+</html>
